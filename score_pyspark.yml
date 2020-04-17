@@ -1,0 +1,8 @@
+name: score_onnx
+dependencies:
+- pip:
+  - pandas
+  - numpy
+  - inference-schema[numpy-support,pandas-support]
+  - pyspark
+  - azureml-defaults
