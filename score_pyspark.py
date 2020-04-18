@@ -58,10 +58,6 @@ def run(input_data):
         return json.dumps({{"trainedModel":str(trainedModel)}})
       
     try:
-    
-        #Getting the spark context
-        sc = spark.sparkContext
-
         #Converting Pandas to Dataframe (Spark)
         input_df = spark.createDataFrame(input_data)
     
